@@ -1,0 +1,24 @@
+# thresholds and options
+apache:
+  401_threshold: 20        # number of 401s from same IP in window -> brute force
+  dos_req_per_min: 120     # requests per minute threshold for DoS detection
+  time_window_minutes: 5
+
+ssh:
+  failed_threshold: 10     # failed SSH attempts in window -> brute force
+  time_window_minutes: 10
+
+scanning:
+  ports_threshold: 20      # distinct destination ports from same IP -> scanning
+  distinct_endpoints_threshold: 50
+
+blacklist:
+  local_file: "blacklist_ips.txt"  # plain text file with one IP per line
+  enabled: true
+
+report:
+  out_dir: "outputs/reports"
+  format: ["csv", "json"]  # export both
+plots:
+  out_dir: "outputs/plots"
+  top_n_ips: 20
