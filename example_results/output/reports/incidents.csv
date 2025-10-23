@@ -1,0 +1,6 @@
+type,ip,status_code,max_count,time,blacklisted,distinct_endpoints,max_failed
+apache_bruteforce,192.0.2.15,401.0,22.0,2025-10-11 18:57:15+05:30,False,,
+http_scanning,198.51.100.9,,,,False,68.0,
+ssh_bruteforce,192.0.2.15,,,2025-10-11 18:56:01,False,,16.0
+ssh_bruteforce,198.51.100.23,,,2025-10-11 18:57:59,False,,68.0
+ssh_bruteforce,198.51.100.52,,,2025-10-11 18:56:25,False,,10.0
